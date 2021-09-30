@@ -8,7 +8,8 @@
     --blue: #0c79cf;
     --secundario: #2e3638;
     --gris: #191c1d; 
-    /* --grisClaro: #;     */
+    --grisClaro: #47433F;   
+    --gris2: #a09c9c;
     
              
 
@@ -25,7 +26,7 @@ html {
   body {
     font-size: 16px; /* 1rem= 10px */
     font-family: 'Krub', sans-serif;
-    background-image: linear-gradient(to top, var(--grisClaro) 0%, var(--blanco) 100%); /*permite cambiar color del fondo*/
+    /* background-image: linear-gradient(to top, var(--grisClaro) 0%, var(--blanco) 100%); permite cambiar color del fondo */
     background-color: var(--oscuro);
 }
 header{
@@ -107,22 +108,32 @@ a{
 /* Logo */
 
 .logo img {
-    width: 70px;
-    height: 70px;
+    width: 80px;
+    height: 58px;
     position: absolute;
-    margin-top: -2rem;
+    margin-top: -0.5rem;
     margin-left: 1rem;
 }
 
 /* Barra de busqueda */
 #int-search{
-    width: 300px;
+    width: 25rem;
     height: 40px;
     font-size: 20px;
     text-indent: 10px;
     border: 1px solid silver;
     border-radius: 30px;
+    margin-top: 0.5rem;
+    z-index: 1;
+    
 }
+#icon-search{
+    font-size: 2.3rem;
+    margin-top: 1.6rem;
+    margin-right: -4rem;
+    z-index: 2;
+}
+
 
 .content-search{
     width: 100%;
@@ -135,10 +146,14 @@ a{
 
 .content-table{
     width: 25%;
+    top: 100px;
     max-height: 200px;
     height: auto;
-    background:rgba(0,0,0,0.3);
+    background: var(--secundario);
     margin-left: 10px;
+    overflow-y: visible;
+    overflow-x:hidden;
+
 }
 
 .content-table table{
@@ -152,7 +167,7 @@ tbody tr td a{
     text-decoration: none;
 }
 tbody tr td a:hover{
-    background: var(--secundario);;
+    background: var(--grisClaro);
 }
 
 /* Navegación principal*/
@@ -191,8 +206,9 @@ tbody tr td a:hover{
    padding: 2rem;
    
 }
-
-
+nav ul i{
+    color: var(--gris2);
+}
 
 
 
