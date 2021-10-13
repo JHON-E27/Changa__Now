@@ -6,10 +6,11 @@
     --green:  #5bde00;
     --light_b: #70c1d9;
     --blue: #0c79cf;
-    --secundario: #2e3638;
+    --secundario: ##FFFFFF;
     --gris: #191c1d; 
     --grisClaro: #47433F;   
     --gris2: #a09c9c;
+    
     
              
 
@@ -27,7 +28,7 @@ html {
     font-size: 16px; /* 1rem= 10px */
     font-family: 'Krub', sans-serif;
     /* background-image: linear-gradient(to top, var(--grisClaro) 0%, var(--blanco) 100%); permite cambiar color del fondo */
-    background-color: var(--oscuro);
+    background-color: var(--blanco);
 }
 header{
     position: fixed;
@@ -141,7 +142,7 @@ a{
     position: fixed;
     top: 60px;
     left: 0;
-    background: rgba(0,0,0,0.3);
+    background: #F3F2EF ;
 }
 
 .content-table{
@@ -188,7 +189,7 @@ tbody tr td a:hover{
 .navegacion-principal{
     margin-right: 35px;
 }
-
+  
 @media (min-width: 768px) {                 
     .navegacion-principal { 
         flex-direction: row; /* Se reinicia al que es su default, entonces display flex; y justify-content: space-between; ya lo va a tener*/
@@ -199,17 +200,26 @@ tbody tr td a:hover{
 
 .navegacion-principal a {
     text-align: center;     /*Centra los enlaces*/
-    color: var(--blanco);
+    color: var(--oscuro);
    text-decoration: none;
    font-size: 1.6rem;
    font-weight: 400;
    padding: 2rem;
    
 }
+
 nav ul i{
-    color: var(--gris2);
+    color: var(--oscuro);
 }
 
+nav ul a span p{
+    font-family: sans-serif;
+    text-align: center;     /*Centra los enlaces*/
+    color: var(--oscuro);
+    margin-top: 0.8rem;
+    font-size: 1.6rem;
+    font-weight: 400;
+}
 
 
 
