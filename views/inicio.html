@@ -5,11 +5,12 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Index Changa_Now</title>
-    <meta charset="preload" href="assets/Css/styles.css">
-    <link rel="stylesheet" href="assets/Css/styles.css">
+    <meta charset="preload" href="../assets/Css/styles.css">
+    <link rel="stylesheet" href="../assets/Css/styles.css">
     <script src="https://kit.fontawesome.com/2c36e9b7b1.js"></script>
+    <script src="../assets/Js/jquery.js"></script>
+    <script src="../assets/Js/jquery.dataTables.min.js"></script>
 
-      
 </head>
 
 <body>
@@ -18,18 +19,17 @@
     <div class="nav-bg"> 
         
         <div class="logo">
-            <a href="#"><img src="assets/Img/logo2.png"  alt="logotipo"></a> 
+            <a href="#"><img src="../assets/Img/logo2.png"  alt="logotipo"></a> 
         </div> 
-
+        
         <!--Navegación principal-->
         <nav class="navegacion-principal contenedor"> 
             <!-- <i class="fas fa-search" id="icon-search"></i>  -->
-            <input type="search" id="int-search"
-            placeholder="     Buscar" > 
+            <input type="search" id="int-search" placeholder="Buscar" > 
                 
             <div class="content-search">
                 <div class="content-table">
-                    <table>
+                    <table id="table">
                         <thead>
                             <tr>
                                 <td></td>
@@ -80,19 +80,6 @@
                 <a href="#"><span class="fas fa-briefcase"><p>Empleos</p></span></a>
                 <a href="#"><span class="fas fa-comment-dots"><p>Mensajes</p></span></a>
                 <a href="#"><span class="fas fa-bell"><p>Notificaciones</p></span></a>
-             
-                
-
-                <!-- <i class="fas fa-home"></i>
-                <a href="#" target="_blank">Inicio</a> 
-                <i class="fas fa-user-friends"></i>
-                <a href="#" target="_blank">Mi red</a> 
-                <i class="fas fa-briefcase"></i>
-                <a href="#" targetwer="_blank">Empleos</a> 
-                <i class="fas fa-comment-dots"></i>
-                <a href="#" targetwer="_blank">Mensajes</a>   
-                <i class="fas fa-bell"></i>
-                <a href="#" targetwer="_blank">Notificaciones</a> -->
                  <!--Enlace Dropdow-->
                 <!-- <div class="dropdown-container">  -->
                    <span><a>Yo</a></span>
@@ -111,37 +98,12 @@
 </header>
 
 
-<!-- <ul id="box-search"> -->
-    <!--resultados de busqueda-->
-    <!-- <li><a href="bienvenida.php"> <i class="fas fa-search"></i> Museos</a></li>Nombre de las cosas que se va buscar -->
-    <!-- <li><a href="bienvenida.php"> <i class="fas fa-search"></i> Obras</a></li> -->
-    <!-- <li><a href="bienvenida.php"> <i class="fas fa-search"></i> Visita</a></li> -->
-    <!-- <li><a href="bienvenida.php"> <i class="fas fa-search"></i> Horario Visita</a></li> -->
-    <!-- <li><a href="nosotros.php"> <i class="fas fa-search"></i> Empresa</a></li> -->
-</ul> 
-
-<div id="cover-ctn-search"></div> <!--Portada del contenedor de la busqueda-->
-
-
-    <!-- Fin barra nav -->
-      <!-- <div class="barra"> -->
-
-    </div>
+    
 <main>
    
     <!-- <div class="cuadrado-1 "> -->
-        
-    </div>
-
-   
-        
-    </div>
-
-
-    
-    
-
-
 </main>  
+
+    <script src="../assets/Js/search.js"></script>
 </body>
 </html>

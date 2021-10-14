@@ -10,6 +10,7 @@
     --gris: #191c1d; 
     --grisClaro: #47433F;   
     --gris2: #a09c9c;
+    --somb: #EBEBEB;
     
     
              
@@ -112,7 +113,7 @@ a{
     width: 80px;
     height: 58px;
     position: absolute;
-    margin-top: -0.5rem;
+    margin-top: 0.8rem;
     margin-left: 1rem;
 }
 
@@ -124,8 +125,10 @@ a{
     text-indent: 10px;
     border: 1px solid silver;
     border-radius: 30px;
-    margin-top: 0.5rem;
+    margin-top: 2rem;
+    margin-left: -18rem;
     z-index: 1;
+    background: #EEF3F8;
     
 }
 #icon-search{
@@ -143,6 +146,7 @@ a{
     top: 60px;
     left: 0;
     background: #F3F2EF ;
+    display: none; 
 }
 
 .content-table{
@@ -150,9 +154,9 @@ a{
     top: 100px;
     max-height: 200px;
     height: auto;
-    background: var(--secundario);
-    margin-left: 10px;
-    overflow-y: visible;
+    background: var(--blanco);
+    margin-left: 9rem;
+    overflow-y: visible; /*overflow hace que se muestre los enlacen mediante un scroll*/
     overflow-x:hidden;
 
 }
@@ -168,7 +172,16 @@ tbody tr td a{
     text-decoration: none;
 }
 tbody tr td a:hover{
-    background: var(--grisClaro);
+    background: #EBEBEB;
+}
+
+
+.content-table tbody a {
+    text-align: left;
+    margin-left: -1rem;
+}
+#table_length, #table_filter, #table_info, #table_paginate{
+    display: none;
 }
 
 /* Navegación principal*/
@@ -188,6 +201,7 @@ tbody tr td a:hover{
 }
 .navegacion-principal{
     margin-right: 35px;
+    
 }
   
 @media (min-width: 768px) {                 
@@ -221,6 +235,9 @@ nav ul a span p{
     font-weight: 400;
 }
 
+nav ul {
+    margin-left: 8rem;
+}
 
 
 

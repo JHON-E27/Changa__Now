@@ -6,7 +6,7 @@
         echo '
             <script>
                 alert("Por favor debes iniciar sesión");
-                window.location = "index.php";
+                window.location = "../views/index.php";
             </script>
         ';
         
@@ -27,6 +27,6 @@
 </head>
 <body>
     <h1>Bienvenido a mi Planeta!</h1>
-    <a href="php/cerrar_sesion.php">Cerrar sesión</a>
+    <a href="cerrar_sesion.php">Cerrar sesión</a>
 </body>
 </html>
