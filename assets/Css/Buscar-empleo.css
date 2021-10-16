@@ -1,0 +1,114 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+
+body{
+	background: #F3F2EF;
+	font-family: 'Open Sans', sans-serif;
+
+}
+
+a {
+	text-decoration: none;
+}
+
+main{
+	margin-left: 10%;
+}
+.barra{
+	height: 60px;
+	width: 100%;
+	border: 0px solid black;
+	border-bottom: 1px solid #ddd;
+	background: white;
+}
+
+.select-box{
+	height: 60px;
+	width: 100%;
+	border: 0px solid black;
+	background: white;
+	border-bottom: 1px solid #ddd;
+}
+
+.resultados{
+	display: flex;
+	border: 1px solid #ddd;
+	width: 40%;
+	height: 50px;
+	background: white;
+	padding: 10px;
+}
+
+.contenedor-label{
+	display: grid;
+	grid-column: auto;
+}
+
+.label-1{
+
+}
+
+.label-2{
+	color: #aaa;
+	font-size: 15px;
+}
+
+.icon{
+	margin-top: 12px;
+	font-size: 25px;
+	color: royalblue;
+	margin-left: 300px;
+}
+
+.contenedor-trabajos{
+	display: flex;
+	width: 40%;
+	height: 140px;
+	border: 1px solid #ddd;
+	background: white;
+	padding: 10px;
+}
+
+.contenedor-img{
+	width: 23%;
+}
+
+.imagen{
+	width: 100%;
+	height: 55%;
+}
+
+.contenedor-contenido{
+	display: flex;
+	flex-direction: column;
+}
+
+.label-3{
+	margin-left: 10px;
+	color: royalblue;
+}
+
+.label-4{
+	margin-left: 10px;
+	color: #aaa;
+	font-size: 15px;
+}
+
+.icono{
+	margin-left: 10px;
+	color: #aaa;
+}
+
+.contenedor-requisitos-padre{
+	display: grid;
+	grid-template-columns: auto auto;
+	margin-top: 10px;
+}
+.label-5{
+	font-size: 15px;
+	color: black;
+	margin-left: 10px;
+}
+
