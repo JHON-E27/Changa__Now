@@ -13,6 +13,10 @@ a {
 	text-decoration: none;
 }
 
+main{
+	margin-top: 7rem;
+}
+
 .barra{
 	height: 60px;
 	width: 100%;

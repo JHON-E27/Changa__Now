@@ -11,12 +11,12 @@
 </head>
 <body>
 
-
-<main>
-	
 	<?php
         include("../includes/header.php");
-    ?> 
+	?> 
+<main>
+	
+	
 
 	<label class="editar">Editar</label>
 
