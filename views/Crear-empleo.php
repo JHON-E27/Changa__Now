@@ -7,7 +7,7 @@
 	<title>Crear Empleo</title>
 	<link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600&display=swap" rel="stylesheet"> 
 	<script src="https://kit.fontawesome.com/2c36e9b7b1.js" crossorigin="anonymous"></script>
-	<link rel="stylesheet" href="../assets/Css/Crear-empleo.css">
+	<link rel="stylesheet" href="../public/Css/Crear-empleo.css">
 </head>
 <body>
 
@@ -15,9 +15,6 @@
         include("../includes/header.php");
 	?> 
 <main>
-	
-	
-
 	<label class="editar">Editar</label>
 
 	<div class="contenedor-padre">

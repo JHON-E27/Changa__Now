@@ -5,11 +5,12 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Index Changa_Now</title>
-    <meta charset="preload" href="../assets/Css/styles.css">
-    <link rel="stylesheet" href="../assets/Css/styles.css">
+    <meta charset="preload" href="../public/Css/styles.css">
+    <link rel="stylesheet" href="../public/Css/styles.css">
+    <link rel="stylesheet" href="../public/Css/Crear-empleo.css">
     <script src="https://kit.fontawesome.com/2c36e9b7b1.js"></script>
-    <script src="../assets/Js/jquery.js"></script>
-    <script src="../assets/Js/jquery.dataTables.min.js"></script>
+    <script src="../public/Js/jquery.js"></script>
+    <script src="../public/Js/jquery.dataTables.min.js"></script>
 
 </head>
 
@@ -19,7 +20,7 @@
     <div class="nav-bg"> 
         
         <div class="logo">
-            <a href="#"><img src="../assets/Img/logo2.png"  alt="logotipo"></a> 
+            <a href="#"><img src="../public/Img/logo2.png"  alt="logotipo"></a> 
         </div> 
         
         <!--Navegación principal-->
