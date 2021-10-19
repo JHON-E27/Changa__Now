@@ -21,7 +21,7 @@
 		<div class="contenedor-imagen">
 			<i class="fas fa-user-edit icono"></i>
 			<div class="contenedor-img">
-				<img class="imagen" src="logo.png">
+				<img class="imagen" src="logo.png"> <!--logo del trabajo-->
 			</div>
 			
 		</div>
