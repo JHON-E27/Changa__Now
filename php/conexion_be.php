@@ -7,4 +7,4 @@
         exit;   
     }   
     
-echo "Conexión correcta";   
+//echo "Conexión correcta";   

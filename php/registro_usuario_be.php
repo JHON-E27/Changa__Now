@@ -22,7 +22,7 @@
             </script>
         ';
         exit();
-    }
+    }  
 
     //Verificar que el nombre de usuario no se repita en la Base de Datos
     $verificar_usuario = mysqli_query($conexion, "SELECT * FROM usuarios WHERE usuario='$usuario'");

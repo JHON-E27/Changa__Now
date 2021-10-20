@@ -40,7 +40,7 @@
                 </div>
             </div>
              <!-- Formulario de login y registro-->
-            <div class="contenedor__login-register">
+            <div class="contenedor__login-register">   
                 <!-- Pertene a Login -->
                 <form action="../php/login_usuario_be.php" method="POST" class="formulario__login">
                     <h2>Iniciar Sesión</h2>

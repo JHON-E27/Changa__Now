@@ -19,7 +19,23 @@
 
 	<div class="contenedor-padre">
 		<div class="contenedor-imagen">
-			<i class="fas fa-user-edit icono"></i>
+
+
+			<!-- <form action="../php/empleo.php" method="POST" enctype="multipart/form-data"> -->
+				<!-- <i class="fas fa-user-edit icono"> -->
+				<!-- <input type="text" name="nombre" placeholder="Nombre..." value=""> -->
+				<!-- <input type="file" name="imagen"> -->
+				<!-- <input type="submit" value="Aceptar"> </i> -->
+			
+			<!-- </form> -->
+			<form action="../php/empleo.php" method="POST" enctype="multipart/form-data">
+				<input type="text" name="nombre" placeholder="Nombre..." value=""/><br/>
+				<input type="file" name="Imagen"/>
+				<input type="submit" value="Aceptar">
+			</form>   
+
+			
+			<!-- <i class="fas fa-user-edit icono"><input type="file" name="Imagen"><input type="submit" value="Aceptar"></i> -->
 			<div class="contenedor-img">
 				<img class="imagen" src="logo.png"> <!--logo del trabajo-->
 			</div>
