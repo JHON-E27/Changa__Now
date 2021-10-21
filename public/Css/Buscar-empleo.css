@@ -6,7 +6,7 @@
 body{
 	background: #F3F2EF;
 	font-family: 'Open Sans', sans-serif;
-
+	overflow-y: hidden;
 }
 
 a {
