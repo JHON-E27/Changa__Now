@@ -7,14 +7,13 @@
     <title>Index Changa_Now</title>
     <meta charset="preload" href="../public/Css/styles.css">
     <link rel="stylesheet" href="../public/Css/styles.css">
-    <link rel="stylesheet" href="../public/Css/Crear-empleo.css">
     <script src="https://kit.fontawesome.com/2c36e9b7b1.js"></script>
     <script src="../public/Js/jquery.js"></script>
     <script src="../public/Js/jquery.dataTables.min.js"></script>
 
 </head>
 
-
+<body> 
 <!-- Navegación principal -->
 <header>
     <div class="nav-bg"> 
@@ -43,31 +42,31 @@
                             </tr>
 
                             <tr>
-                                <td><a href="#">ajedrez</a></td>
+                                <td><a href="https://trello.com/b/wws5alhK/changanow">empleos</a></td>
                             </tr>
 
                             <tr>
-                                <td><a href="#">sql</a></td>
+                                <td><a href="#">Buenos Aires</a></td>
                             </tr>
 
                             <tr>
-                                <td><a href="#">css</a></td>
+                                <td><a href="#">Plomeria</a></td>
                             </tr>
 
                             <tr>
-                                <td><a href="#">html</a></td>
+                                <td><a href="#">Carpinteria</a></td>
                             </tr>
 
                             <tr>
-                                <td><a href="#">php</a></td>
+                                <td><a href="#">Pasear animales</a></td>
                             </tr>
 
                             <tr>
-                                <td><a href="#">python</a></td>
+                                <td><a href="#">Jardineria</a></td>
                             </tr>
 
                             <tr>
-                                <td><a href="#">juegos</a></td>
+                                <td><a href="#">Podador de pasto</a></td>
                             </tr>
 
                         </tbody>
@@ -75,16 +74,16 @@
                 </div>
             </div>
         
-            <ul class="">
-                <a href="#"><span class="fas fa-home"><p>Inicio</p></span></a>
-                <a href="#"><span class="fas fa-user-friends"><p>Mi red</p></span></a>
-                <a href="#"><span class="fas fa-briefcase"><p>Empleos</p></span></a>
-                <a href="#"><span class="fas fa-comment-dots"><p>Mensajes</p></span></a>
-                <a href="#"><span class="fas fa-bell"><p>Notificaciones</p></span></a>
+            <ul class="color">
+                <a href="inicio.php"><span class="fas fa-home"><p>Inicio</p></span></a>
+                <a href="mi_red.php"><span class="fas fa-user-friends"><p>Mi red</p></span></a>
+                <a href="buscar_empleo.php"><span class="fas fa-briefcase"><p>Empleos</p></span></a>
+                <a href="mensajes.php"><span class="fas fa-comment-dots"><p>Mensajes</p></span></a>
+                <a href="notificaciones.php"><span class="fas fa-bell"><p>Notificaciones</p></span></a>
                 
                  <!--Enlace Dropdow-->
                 <!-- <div class="dropdown-container">  -->
-                   <span><a>Yo</a></span>
+                   <span><a href="#">Yo</a></span>
                     <!-- <ul class="dropdown-menu"> -->
 
                     <!-- </ul> -->

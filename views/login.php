@@ -8,8 +8,6 @@
 ?>
 
 
-
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -57,11 +55,14 @@
                     <input type="password" placeholder="Contraseña" name="contrasena">
                     <div class="contenedor__login-register-1">
                         <select class="input" onchange="Barra_Roles()" name="tipoUsuario" id="tipo">
-                        <option value="nashe" selected="select" id="nada">Seleccione un rol</option>
-                        <option value="1"id="usuario" >Jefe</option>           
-                        <option value="2"id="proveedor">Trabajador</option></select>
+                        <option value="ninguno" selected="select" id="nada">Seleccione un rol</option>
+                        <option value="Jefe"id="usuario" >Jefe</option>           
+                        <option value="Trabajador"id="proveedor">Trabajador</option></select>
                     </div>
-                    <button>Regístrarse</button>
+                    <button type="submit" name="submit">Regístrarse</button>
+                    <!-- <?php
+                        // include("../php/validar-form.php");
+                    ?>  -->
                 </form>
             </div>
         </div>

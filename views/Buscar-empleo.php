@@ -1,3 +1,8 @@
+<?php
+	include 'conexion_be.php'; 
+	
+	?>
+
 <!DOCTYPE html>
 <html>
 <head>
@@ -8,11 +13,20 @@
 	<link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600&display=swap" rel="stylesheet"> 
 	<script src="https://kit.fontawesome.com/2c36e9b7b1.js" crossorigin="anonymous"></script>
 	<link rel="stylesheet" href="../public/Css/Buscar-empleo.css">
-	<link rel="stylesheet" href="../public/Css/styles.css">
-</head>
-<body>
-	<div class="barra">
-		
+	
+
+	<meta charset="preload" href="../public/Css/styles.css">
+    <link rel="stylesheet" href="../public/Css/styles.css">
+    <script src="https://kit.fontawesome.com/2c36e9b7b1.js"></script>
+    <script src="../public/Js/jquery.js"></script>
+    <script src="../public/Js/jquery.dataTables.min.js"></script>
+</head>  
+
+	<?php
+        include("../includes/header.php");
+	?> 
+	
+
 	</div>	
 
 	<div class="select-box">
@@ -215,7 +229,7 @@
 <main>
 	<div class="contenedor-abuelo-abuelo">
 	<div class="contenedor-abuelo">
-		<div class="resultados">
+		<div class="resultados"> <!-- -->
 			<div class="contenedor-label">
 			<label class="label-1">Changas en Argentina</label>
 			<label class="label-2">100 resultados</label>
@@ -226,40 +240,63 @@
 			</div>
 		</div>
 
+		
+
 		<div class="contenedor-padre">
 			<div class="contenedor-trabajos-padre">
+				
+
+				<?php
+				
+				$sql= "SELECT * FROM crear_empleo";
+				$result=mysqli_query($conexion, $sql);
+
+				if($result){
+        
+						echo "se mostro";
+					}
+					else{
+						echo "No se mostro";
+					}
+				while($mostrar=mysqli_fetch_array($result)){
+
+				?>	
+
 				<div class="contenedor-trabajos">
+				
+				
 					
 					<div class=contenedor-img>
-						<img class="imagen" src="../public/Img/fondo_login.jpg">
+					
+					<img class="imagen" src="foto-trabajo.png">
 					</div>
 
 					<div class="contenedor-contenido">
-						<label class="label-3">Vendedor de Autos - Volkswagen </label>
-						<label class="label-4">Provincia de Buenos Aires, Argentina</label>
+						<label class="label-3"><?php echo $mostrar['nombre_Trabajo']?>	</label>
+						<label class="label-4"><?php echo $mostrar['Direccion']?>, Argentina</label>
 						<div class="contenedor-requisitos-padre">
 							<div class="contenedor-requisitos">
-								<i class="fas fa-briefcase icono"></i><label class="label-5">Jornada Completa</label>
+								<i class="fas fa-briefcase icono"></i><label class="label-5"><?php echo $mostrar['tipo_Jornada']?></label>
 							</div>
 
 							<div class="contenedor-requisitos">
-								<i class="fas fa-user-clock icono"></i><label class="label-5">Algo de Experiencia</label>
+								<i class="fas fa-user-clock icono"></i><label class="label-5"><?php echo $mostrar['nivel_Experiencia']?></label>
 							</div>
 
 							<div class="contenedor-requisitos">
-								<i class="fas fa-user-graduate icono"></i><label class="label-5">Titulo secundario</label>
+								<i class="fas fa-user-graduate icono"></i><label class="label-5"><?php echo $mostrar['Titulo']?></label>
 							</div>
 
 							<div class="contenedor-requisitos">
-								<i class="fas fa-globe-americas icono"></i><label class="label-5">Ingles</label>
+								<i class="fas fa-globe-americas icono"></i><label class="label-5"><?php echo $mostrar['Idioma']?></label>
 							</div>
 
 							<div class="contenedor-requisitos">
-								<i class="fas fa-building icono"></i><label class="label-5">Contrato por obra</label>
+								<i class="fas fa-building icono"></i><label class="label-5"><?php echo $mostrar['tipo_Empleo']?></label>
 							</div>
 
 							<div class="contenedor-requisitos">
-								<i class="fas fa-user-alt icono"></i><label class="label-5">Mayor de 18 años</label>
+								<i class="fas fa-user-alt icono"></i><label class="label-5"><?php echo $mostrar['Edad']?></label>
 							</div>
 
 						</div>
@@ -267,126 +304,13 @@
 					</div>
 
 				</div>
+				<?php
+				}
+				?>
 
-				<div class="contenedor-trabajos">
-					
-					<div class=contenedor-img>
-						<img class="imagen" src="../public/Img/fondo_login.jpg">
-					</div>
+				
 
-					<div class="contenedor-contenido">
-						<label class="label-3">Vendedor de Autos - Volkswagen </label>
-						<label class="label-4">Provincia de Buenos Aires, Argentina</label>
-						<div class="contenedor-requisitos-padre">
-							<div class="contenedor-requisitos">
-								<i class="fas fa-briefcase icono"></i><label class="label-5">Jornada Completa</label>
-							</div>
-
-							<div class="contenedor-requisitos">
-								<i class="fas fa-user-clock icono"></i><label class="label-5">Algo de Experiencia</label>
-							</div>
-
-							<div class="contenedor-requisitos">
-								<i class="fas fa-user-graduate icono"></i><label class="label-5">Titulo secundario</label>
-							</div>
-
-							<div class="contenedor-requisitos">
-								<i class="fas fa-globe-americas icono"></i><label class="label-5">Ingles</label>
-							</div>
-
-							<div class="contenedor-requisitos">
-								<i class="fas fa-building icono"></i><label class="label-5">Contrato por obra</label>
-							</div>
-
-							<div class="contenedor-requisitos">
-								<i class="fas fa-user-alt icono"></i><label class="label-5">Mayor de 18 años</label>
-							</div>
-
-						</div>
-
-					</div>
-
-				</div>
-
-				<div class="contenedor-trabajos">
-					
-					<div class=contenedor-img>
-						<img class="imagen" src="../public/Img/fondo_login.jpg">
-					</div>
-
-					<div class="contenedor-contenido">
-						<label class="label-3">Vendedor de Autos - Volkswagen </label>
-						<label class="label-4">Provincia de Buenos Aires, Argentina</label>
-						<div class="contenedor-requisitos-padre">
-							<div class="contenedor-requisitos">
-								<i class="fas fa-briefcase icono"></i><label class="label-5">Jornada Completa</label>
-							</div>
-
-							<div class="contenedor-requisitos">
-								<i class="fas fa-user-clock icono"></i><label class="label-5">Algo de Experiencia</label>
-							</div>
-
-							<div class="contenedor-requisitos">
-								<i class="fas fa-user-graduate icono"></i><label class="label-5">Titulo secundario</label>
-							</div>
-
-							<div class="contenedor-requisitos">
-								<i class="fas fa-globe-americas icono"></i><label class="label-5">Ingles</label>
-							</div>
-
-							<div class="contenedor-requisitos">
-								<i class="fas fa-building icono"></i><label class="label-5">Contrato por obra</label>
-							</div>
-
-							<div class="contenedor-requisitos">
-								<i class="fas fa-user-alt icono"></i><label class="label-5">Mayor de 18 años</label>
-							</div>
-
-						</div>
-
-					</div>
-
-				</div>
-
-				<div class="contenedor-trabajos">
-					
-					<div class=contenedor-img>
-						<img class="imagen" src="../public/Img/fondo_login.jpg">
-					</div>
-
-					<div class="contenedor-contenido">
-						<label class="label-3">Vendedor de Autos - Volkswagen </label>
-						<label class="label-4">Provincia de Buenos Aires, Argentina</label>
-						<div class="contenedor-requisitos-padre">
-							<div class="contenedor-requisitos">
-								<i class="fas fa-briefcase icono"></i><label class="label-5">Jornada Completa</label>
-							</div>
-
-							<div class="contenedor-requisitos">
-								<i class="fas fa-user-clock icono"></i><label class="label-5">Algo de Experiencia</label>
-							</div>
-
-							<div class="contenedor-requisitos">
-								<i class="fas fa-user-graduate icono"></i><label class="label-5">Titulo secundario</label>
-							</div>
-
-							<div class="contenedor-requisitos">
-								<i class="fas fa-globe-americas icono"></i><label class="label-5">Ingles</label>
-							</div>
-
-							<div class="contenedor-requisitos">
-								<i class="fas fa-building icono"></i><label class="label-5">Contrato por obra</label>
-							</div>
-
-							<div class="contenedor-requisitos">
-								<i class="fas fa-user-alt icono"></i><label class="label-5">Mayor de 18 años</label>
-							</div>
-
-						</div>
-
-					</div>
-
-				</div>
+				
 
 			</div>
 		</div>
@@ -445,6 +369,6 @@
 	</div>
 	
 </main>
-<script src="../public/Js/main.js"></script>
-</body>
-</html>
+<?php
+	include("../includes/footer.php");
+?>

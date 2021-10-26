@@ -1,64 +1,95 @@
-CREATE DATABASE  IF NOT EXISTS `changa_now` /*!40100 DEFAULT CHARACTER SET utf8mb4 COLLATE utf8mb4_0900_ai_ci */ /*!80016 DEFAULT ENCRYPTION='N' */;
-USE `changa_now`;
--- MySQL dump 10.13  Distrib 8.0.25, for Win64 (x86_64)
+-- phpMyAdmin SQL Dump
+-- version 5.0.4
+-- https://www.phpmyadmin.net/
 --
--- Host: 127.0.0.1    Database: changa_now
--- ------------------------------------------------------
--- Server version	8.0.26
+-- Host: localhost:3307
+-- Generation Time: Oct 26, 2021 at 02:16 PM
+-- Server version: 5.7.24
+-- PHP Version: 8.0.1
+
+SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
+START TRANSACTION;
+SET time_zone = "+00:00";
+
 
 /*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT */;
 /*!40101 SET @OLD_CHARACTER_SET_RESULTS=@@CHARACTER_SET_RESULTS */;
 /*!40101 SET @OLD_COLLATION_CONNECTION=@@COLLATION_CONNECTION */;
-/*!50503 SET NAMES utf8 */;
-/*!40103 SET @OLD_TIME_ZONE=@@TIME_ZONE */;
-/*!40103 SET TIME_ZONE='+00:00' */;
-/*!40014 SET @OLD_UNIQUE_CHECKS=@@UNIQUE_CHECKS, UNIQUE_CHECKS=0 */;
-/*!40014 SET @OLD_FOREIGN_KEY_CHECKS=@@FOREIGN_KEY_CHECKS, FOREIGN_KEY_CHECKS=0 */;
-/*!40101 SET @OLD_SQL_MODE=@@SQL_MODE, SQL_MODE='NO_AUTO_VALUE_ON_ZERO' */;
-/*!40111 SET @OLD_SQL_NOTES=@@SQL_NOTES, SQL_NOTES=0 */;
+/*!40101 SET NAMES utf8mb4 */;
+
+--
+-- Database: `changa_now`
+--
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `crear_empleo`
+--
+
+CREATE TABLE `crear_empleo` (
+  `id_emp` int(11) NOT NULL,
+  `imagen` longblob,
+  `nombre_Trabajo` varchar(100) COLLATE utf8mb4_unicode_ci NOT NULL,
+  `Titulo` varchar(100) COLLATE utf8mb4_unicode_ci NOT NULL,
+  `Direccion` varchar(100) COLLATE utf8mb4_unicode_ci NOT NULL,
+  `tipo_Jornada` varchar(100) COLLATE utf8mb4_unicode_ci NOT NULL,
+  `Edad` varchar(100) COLLATE utf8mb4_unicode_ci NOT NULL,
+  `nivel_Experiencia` varchar(100) COLLATE utf8mb4_unicode_ci NOT NULL,
+  `Idioma` varchar(100) COLLATE utf8mb4_unicode_ci NOT NULL,
+  `tipo_Empleo` varchar(100) COLLATE utf8mb4_unicode_ci NOT NULL,
+  `Descripcion` text COLLATE utf8mb4_unicode_ci NOT NULL,
+  `perfil_Trab` text COLLATE utf8mb4_unicode_ci NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+
+-- --------------------------------------------------------
 
 --
 -- Table structure for table `usuarios`
 --
 
-DROP TABLE IF EXISTS `usuarios`;
-/*!40101 SET @saved_cs_client     = @@character_set_client */;
-/*!50503 SET character_set_client = utf8mb4 */;
 CREATE TABLE `usuarios` (
-  `id` int NOT NULL AUTO_INCREMENT,
-  `nombre_completo` varchar(50) NOT NULL,
-  `correo` varchar(50) NOT NULL,
-  `usuario` varchar(50) NOT NULL,
-  `contrasena` varchar(50) NOT NULL,
-  `tipoUsuario` varchar(100) NOT NULL,
-  PRIMARY KEY (`id`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
-/*!40101 SET character_set_client = @saved_cs_client */;
+  `id` int(11) NOT NULL,
+  `nombre_completo` varchar(50) COLLATE utf8mb4_unicode_ci NOT NULL,
+  `correo` varchar(50) COLLATE utf8mb4_unicode_ci NOT NULL,
+  `usuario` varchar(50) COLLATE utf8mb4_unicode_ci NOT NULL,
+  `contrasena` varchar(50) COLLATE utf8mb4_unicode_ci NOT NULL,
+  `tipoUsuario` varchar(100) COLLATE utf8mb4_unicode_ci NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 
 --
--- Dumping data for table `usuarios`
---
-
-LOCK TABLES `usuarios` WRITE;
-/*!40000 ALTER TABLE `usuarios` DISABLE KEYS */;
-/*!40000 ALTER TABLE `usuarios` ENABLE KEYS */;
-UNLOCK TABLES;
-
---
--- Dumping events for database 'changa_now'
+-- Indexes for dumped tables
 --
 
 --
--- Dumping routines for database 'changa_now'
+-- Indexes for table `crear_empleo`
 --
-/*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;
+ALTER TABLE `crear_empleo`
+  ADD PRIMARY KEY (`id_emp`);
 
-/*!40101 SET SQL_MODE=@OLD_SQL_MODE */;
-/*!40014 SET FOREIGN_KEY_CHECKS=@OLD_FOREIGN_KEY_CHECKS */;
-/*!40014 SET UNIQUE_CHECKS=@OLD_UNIQUE_CHECKS */;
+--
+-- Indexes for table `usuarios`
+--
+ALTER TABLE `usuarios`
+  ADD PRIMARY KEY (`id`);
+
+--
+-- AUTO_INCREMENT for dumped tables
+--
+
+--
+-- AUTO_INCREMENT for table `crear_empleo`
+--
+ALTER TABLE `crear_empleo`
+  MODIFY `id_emp` int(11) NOT NULL AUTO_INCREMENT;
+
+--
+-- AUTO_INCREMENT for table `usuarios`
+--
+ALTER TABLE `usuarios`
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT;
+COMMIT;
+
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
 /*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
-/*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
-
--- Dump completed on 2021-09-16 13:53:21

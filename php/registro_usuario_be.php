@@ -1,5 +1,6 @@
 <?php
     include 'conexion_be.php';
+    
     $nombre_completo = $_POST['nombre_completo']; // Almacenar los datos del campo Nombre Completo 
     $correo = $_POST['correo']; // Almacenar los datos del campo Correo Electronico
     $usuario = $_POST['usuario']; // Almacenar los datos del campo Usuario
@@ -10,15 +11,14 @@
 
     $query = "INSERT INTO usuarios(nombre_completo, correo, usuario, contrasena,tipoUsuario)
               VALUES('$nombre_completo', '$correo','$usuario','$contrasena','$tipoUsuario')";
-    
+
     //Verificar que el correo no se repita en la Base de Datos
     $verificar_correo = mysqli_query($conexion, "SELECT * FROM usuarios WHERE correo='$correo'");
-
     if(mysqli_num_rows($verificar_correo) > 0){
         echo '
             <script>
                 alert("Este correo ya está registrado, intenta con otro diferente");
-                window.location = "../views/index.php";
+                window.location = "../views/login.php";
             </script>
         ';
         exit();
@@ -31,7 +31,7 @@
         echo '
             <script>
                 alert("Este usuario ya está registrado, intenta con otro diferente");
-                window.location = "../views/index.php";
+                window.location = "../views/login.php";
             </script>
         ';
         exit();
@@ -45,14 +45,14 @@
         echo '
                 <script>
                     alert("Usuario almacenado exitosamente");
-                    window.location = "../views/index.php";
+                    window.location = "../views/login.php";
                 </script>
         ';
     }else{
         echo '
                 <script>
                     alert("Inténtalo de nuevo, usuario no almacenado exitosamente");
-                    window.location = "../views/index.php";
+                    window.location = "../views/login.php";
                 </script>
         ';
     }
