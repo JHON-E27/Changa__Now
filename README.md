@@ -1,5 +1,5 @@
-# MarketNow
-<img src="public/Img/logo.png" height="200" align="center">
+# CHANGA_NOW
+<img src="public/Img/logo2.png" height="200" align="center">
 
 ### Importante!
 Importar el script de la base de datos a phpMyAdmin
