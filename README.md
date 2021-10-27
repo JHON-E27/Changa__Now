@@ -12,7 +12,7 @@ DB_DATABASE=changa_now
 
 
 ### Instalacion
-Este proyecto utiliza NodeJs Mamp 5.0 para su funcionaminto,
+Este proyecto utiliza Mamp 5.0 para su funcionaminto,
 por lo cual debe instalarlo y poner la carpeta de changa_now a la carpeta htdocs de Mamp :
 
 ### Uso
