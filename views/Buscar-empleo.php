@@ -1,4 +1,4 @@
-<?php
+	<?php
 	include 'conexion_be.php'; 
 	
 	?>
@@ -304,9 +304,52 @@
 					</div>
 
 				</div>
+
+				
+
 				<?php
 				}
 				?>
+
+				<div class="contenedor-trabajos">
+					
+					<div class=contenedor-img>
+						<img class="imagen" src="../public/Img/fondo_login.jpg">
+					</div>
+
+					<div class="contenedor-contenido">
+						<label class="label-3">Vendedor de Autos - Volkswagen </label>
+						<label class="label-4">Provincia de Buenos Aires, Argentina</label>
+						<div class="contenedor-requisitos-padre">
+							<div class="contenedor-requisitos">
+								<i class="fas fa-briefcase icono"></i><label class="label-5">Jornada Completa</label>
+							</div>
+
+							<div class="contenedor-requisitos">
+								<i class="fas fa-user-clock icono"></i><label class="label-5">Algo de Experiencia</label>
+							</div>
+
+							<div class="contenedor-requisitos">
+								<i class="fas fa-user-graduate icono"></i><label class="label-5">Titulo secundario</label>
+							</div>
+
+							<div class="contenedor-requisitos">
+								<i class="fas fa-globe-americas icono"></i><label class="label-5">Ingles</label>
+							</div>
+
+							<div class="contenedor-requisitos">
+								<i class="fas fa-building icono"></i><label class="label-5">Contrato por obra</label>
+							</div>
+
+							<div class="contenedor-requisitos">
+								<i class="fas fa-user-alt icono"></i><label class="label-5">Mayor de 18 años</label>
+							</div>
+
+						</div>
+
+					</div>
+
+				</div>
 
 				
 
@@ -369,6 +412,7 @@
 	</div>
 	
 </main>
+<script src="../public/Js/main.js"></script>
 <?php
 	include("../includes/footer.php");
 ?>

@@ -28,7 +28,7 @@
 
 	
 		<label class="editar">Editar</label>
-		<form action="../php/empleo.php" method="POST" enctype="multipart/form-data">
+		<form action="../php/empleo.php" method="POST" enctype="multipart/form-data"> <!-- enctype="multipart/form-data" Te permite subir archivos-->
 			<div class="contenedor-padre">
 
 			
@@ -47,7 +47,8 @@
 					
 					<!-- <i class="fas fa-user-edit icono"><input type="file" name="Imagen"><input type="submit" value="Aceptar"></i> -->
 					<div class="contenedor-img">
-						
+						<!-- <label for="foto">Selecciona tu foto</label> -->
+						<!-- <input type="file" id="foto" name="foto"> -->
 						<input type="file" required name="Imagen">
 						<input type="text" value="Aceptar">
 						<img class="imagen" src="logo.png"> <!--logo del trabajo-->
